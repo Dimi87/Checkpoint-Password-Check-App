@@ -12,14 +12,14 @@
         <h1>Password Check</h1>
     </header>
     <main>
-    <div>
+    <form onsubmit="return false" id="passwords">
     <input class="password1" type="password" name="" id="password1">
     <br><br>
     <input class="password2" type="password" name="" id="password2">
     <br><br>
     <button id="toggle-button">Show Passwords</button>
     <br><br><br>
-    </div>
+    </form>
      <div>
         <ul class="check-list">
             <li>Passwords are equal <span id="passwords-are-equal">❌</span></li>
@@ -28,7 +28,7 @@
             <br>
             <li>Upper Case Letters <span id="upper-case-letters">❌</span></li>
             <br>
-            <li>Contains Numbers <span id="contains-numbersl">❌</span></li>
+            <li>Contains Numbers <span id="contains-numbers">❌</span></li>
             <br>
             <li>At least 10 characters long <span id="at-least-10-characters-long">❌</span></li>
         </ul>       
