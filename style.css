@@ -29,3 +29,34 @@ h1 {
     color: white;
     text-shadow: 0.1em 0.1em #333
 }
+
+input {
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 200px;
+  height: 30px;
+  
+}
+
+button {
+  border: 3px solid black;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 30px;
+  
+  
+}
+
+ul {
+    list-style-type: none;
+  }
+
+
+
+@media screen and (min-width: 700px) {
+    main {
+  
+    }
+  }
