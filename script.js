@@ -42,6 +42,15 @@ function equal () {
 }
 passwords.addEventListener("input", equal) 
 
+//Lower Case//
+function lower () {
+  if (/[a-z]/.test(passwordFirstField.value)) {
+    lowerCaseLetters.innerText = "✅";
+  } else {
+    lowerCaseLetters.innerText = "❌";
+  }
+}
+passwords.addEventListener("input", lower)
 //Long//
 function long() {
   if (passwordFirstField.value.length >= 10) {
