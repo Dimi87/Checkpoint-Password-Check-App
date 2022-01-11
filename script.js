@@ -44,7 +44,7 @@ passwords.addEventListener("input", equal)
 
 //Lower Case//
 function lower () {
-  if (/[a-z]/.test(passwordFirstField.value)) {
+  if (/[a-z]/.test(passwordFirstField.value) && passwordFirstField.value == passwordSecondField.value) {
     lowerCaseLetters.innerText = "✅";
   } else {
     lowerCaseLetters.innerText = "❌";
@@ -54,7 +54,7 @@ passwords.addEventListener("input", lower)
 
 // Upper Case//
 function uper () {
-  if (/[A-Z]/.test(passwordFirstField.value)) {
+  if (/[A-Z]/.test(passwordFirstField.value) && passwordFirstField.value == passwordSecondField.value) {
     upperCaseLetters.innerText = "✅";
   } else {
     upperCaseLetters.innerText = "❌";
@@ -64,7 +64,7 @@ passwords.addEventListener("input", uper)
 
 //Contains Numbers//
 function numbers () {
-  if (/[0-9]/.test(passwordFirstField.value)) {
+  if (/[0-9]/.test(passwordFirstField.value) && passwordFirstField.value == passwordSecondField.value) {
     containsNumbers.innerText = "✅";
   } else {
     containsNumbers.innerText = "❌";
@@ -74,7 +74,7 @@ passwords.addEventListener("input", numbers)
 
 //Long//
 function long() {
-  if (passwordFirstField.value.length >= 10) {
+  if (passwordFirstField.value.length >= 10 && passwordFirstField.value == passwordSecondField.value) {
     atLeast10charactersLong.innerText = "✅";
   } else {
     atLeast10charactersLong.innerText = "❌";
