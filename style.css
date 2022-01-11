@@ -57,6 +57,10 @@ ul {
 
 @media screen and (min-width: 700px) {
     main {
-  
+    display: flex;
+    justify-content: center;
+    }
+    form {
+      margin-top: 60px;
     }
   }
