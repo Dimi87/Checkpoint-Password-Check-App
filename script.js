@@ -50,5 +50,6 @@ function long() {
     atLeast10charactersLong.innerText = "❌";
   }
 }
+passwords.addEventListener("input",long)
   
 
