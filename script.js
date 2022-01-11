@@ -7,7 +7,7 @@ const passwordSecondField = document.querySelector("#password2");
 const passwordsAreEqual = document.querySelector("#passwords-are-equal")
 const lowerCaseLetters = document.querySelector("#lower-case-letters")
 const upperCaseLetters = document.querySelector("#upper-case-letters")
-const containsNumbersl = document.querySelector("#contains-numbers")
+const containsNumbers = document.querySelector("#contains-numbers")
 const atLeast10charactersLong = document.querySelector("#at-least-10-characters-long")
 const passwords = document.querySelector("#passwords")
 
@@ -51,6 +51,27 @@ function lower () {
   }
 }
 passwords.addEventListener("input", lower)
+
+// Upper Case//
+function uper () {
+  if (/[A-Z]/.test(passwordFirstField.value)) {
+    upperCaseLetters.innerText = "✅";
+  } else {
+    upperCaseLetters.innerText = "❌";
+  }
+}
+passwords.addEventListener("input", uper)
+
+//Contains Numbers//
+function numbers () {
+  if (/[0-9]/.test(passwordFirstField.value)) {
+    containsNumbers.innerText = "✅";
+  } else {
+    containsNumbers.innerText = "❌";
+  }
+}
+passwords.addEventListener("input", numbers)
+
 //Long//
 function long() {
   if (passwordFirstField.value.length >= 10) {
